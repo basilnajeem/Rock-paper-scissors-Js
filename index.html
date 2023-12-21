@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-paper-scissors</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="score-board">
+        <div class="score">
+            <h1>ROCK <br> PAPER <br> SCISSORS</h1>
+            <div class="score-count">
+                <div class="pcscore">COMPUTER<br> SCORE <span id="pc-score-number">0</span></div>
+                <div class="your-score">YOUR<br> SCORE <span id="your-score-number">0</span></div>
+            </div>
+        </div>
+    </header>
+    <section>
+
+        <div class="symbols">
+            <div class="rock-sci">
+                <div><img src="./images/rock.png" alt="" onclick="gamescore(event)" id="rock"></div>
+                <div><img src="./images/Line 1.png" alt="" id="line-1"></div>
+                <div class="scissors">
+                    <div><img src="./images/scissors-1.png" alt=""  onclick="gamescore(event)" id="scissors"></div>
+                </div>
+            </div>
+            <div class="option-1">
+                <div><img src="./images/Line 3.png" alt=""></div>
+                <div><img src="./images/Line 2.png" alt=""></div>
+            </div>
+            <div class="paper">
+                <img src="./images/paper.png" alt=""  onclick="gamescore(event)" id="paper">
+            </div>
+        </div>
+
+
+
+        <!-- play zone -->
+
+        <div class="win-screen">
+            <div class="you-picked">
+                <img src="./images/scissors.png" alt="" id="myout">
+                <p class="side-text">YOU PICKED</p>
+            </div>
+            <div class="win-announcement">
+                <h3 id="won-lose">YOU WON</h3>
+                <h4 id="against-pc">AGAINST PC</h4>
+                <button class="play-again" onclick="playagain()">PLAY AGAIN</button>  
+            </div>
+            <div class="pc-picked">
+                <img src="./images/paper.png" alt="" id="pcout">
+                <p class="side-text">PC PICKED</p>
+            </div>
+       </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="rules-box">
+            <h1>Game Rules</h1>
+            <ul>
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock,
+                    paper, scissors.”</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+            <button type="submit" class="close"></button>
+        </div>
+
+
+
+        <!-- winner section  -->
+
+        <div class="winner-screen">
+            <img src="./images/winner.png" alt="">
+            <h1>HURRAY!!</h1>
+            <h4>YOU WON THE GAME</h4>
+            <button class="play-again" onclick="playagain1()">PLAY AGAIN</button>  
+        </div>
+
+    </section>  
+    <footer>
+        <div class="end-buttons">
+            <button type="submit" class="rules-button">RULES</button>
+            <button type="submit" class="next-button"  onclick="hurray()">NEXT</button>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
